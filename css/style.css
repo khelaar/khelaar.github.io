@@ -1,5 +1,5 @@
 *{
-/*	border:1px dotted;*/
+	/*border:1px dotted;*/
 }
 body{
 	margin:0px;
@@ -13,7 +13,8 @@ body{
 /*	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-*/    background-size: 1920px auto;
+*/    
+	background-size: 1920px auto;
     position:relative;    
     min-width:960px;
 }
@@ -52,6 +53,7 @@ body{
 	position: absolute;
 	background:#0071bc;
 	bottom:0;
+	z-index: 1;
 }
 .menu-list{
 	display:block;
@@ -82,31 +84,37 @@ body{
 	bottom:auto;
 	top:0;
 }
-.content{
+/*.content{
 	width:960px;
 	margin:auto;
+}*/
+.content-section{
+	width:960px;
+	margin:auto;
+	position:relative;
 }
-.content strong{
+.content-section strong{
 	color:#0071bc;
 	font-width:700;
 }
-.content a{
+.content-section a{
 	color:orange;	
+
 }
-.content a:hover{
+.content-section a:hover{
 	text-decoration:none;
 }
-.content img{
+.content-section img{
 	margin-bottom:20px;
 }
-.content ul{
+.content-section ul{
 	list-style:none;
 	margin:0 0 20px 0;
 	padding: 0;
 	font-size: inherit;
 	font-style: inherit;
 }
-.content ul li{
+.content-section ul li{
 	line-height:1.3em;
 	font-size: 20px;
 	margin: 0 0;
@@ -114,10 +122,12 @@ body{
 	background:url("../img/list_dot.png") no-repeat 0 0.4em;
 }
 .content-section-header{
+
 	clear:both;
 	padding-left:390px;
 	border-bottom: 1px solid #0071bc;
 	font-size:42px;
+	letter-spacing: -2px;
 	font-weight:700;
 	line-height:80%;
 	color:#0071bc;
@@ -127,7 +137,7 @@ body{
     padding:40px 10px 10px 10px;
 }
 .col-left{
-    width: 300px;
+    width:300px;
     float:left;
 
 }
@@ -141,7 +151,7 @@ body{
 }
 .image-caption{
 	font-size:32px;
-	font-weight: 300;
+	font-weight:300;
 	letter-spacing: -2px;
 	line-height:120%;
 	margin:0px;
@@ -149,9 +159,9 @@ body{
 }
 .quote-small{
 	font-size:20px;
-	font-weight: 300;
+	font-weight:300;
 	line-height:120%;
-	font-style: italic;
+	font-style:italic;
 	margin:0px;
 }
 .col-main{
@@ -162,8 +172,118 @@ body{
 .col-main p{
 	font-size:20px;
 	margin-top:0px;
-	line-height: 120%
+	line-height:120%
 }
+.bluebg{
+	background: #0071bc;
+	margin-top:-1px;
+	position:relative;
+	min-width: 980px;
+}
+#mission{
+	position:absolute; 
+	bottom:-20px; 
+	left:0px; 
+}
+.col-main .mission-text{
+	display:block;
+	font-size:32px;
+	font-weight:300;
+	letter-spacing:-2px;
+	line-height:120%;
+	padding:10px;
+	margin-top:40px;
+	font-style:italic;
+	color:white;
+}
+.how-it-works, #btn-submit{
+	background:orange;
+	width:100%;
+	height:60px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	color:white;
+	font-family: "Open Sans";
+	font-size:32px;
+	letter-spacing:-1px;
+	font-weight: 700;
+	border:none;
+}
+.how-it-works-img{
+	background:url("../img/how_solar_works.jpg") 0 0;
+	background-size: 100%;
+	border-radius: 0;
+	width:100%;
+	height:100%;
+}
+.contacts{
+	background:url("../img/village.png") #0071bc no-repeat 50% 100%;
+}
+#plane{
+	margin-left:40px;
+}
+.bluebg .quote-big{
+	color:white;
+	font-width:300;
+}
+.bluebg strong{
+	color:white;
+	font-weight: 700;
+}
+.contacts label{
+	color:white;
+	font-family: "Open Sans";
+	font-size:20px;
+	font-weight:400;
+
+}
+
+::-webkit-input-placeholder{
+	font-size: 20px;
+	padding-top:6px;
+	color:orange;
+}
+::-moz-placeholder{
+	font-size: 20px;
+	padding-top:6px;
+	color:orange;
+	opacity:  1;
+}
+:-ms-input-placeholder{
+	color:orange;
+}
+input:-moz-placeholder{
+	color:orange;
+	opacity:  1;
+}
+.contacts input, textarea{
+	font-family: "Open Sans";
+	font-size: 32px;
+	color:white;
+	width:516px;
+	height:40px;
+	background:#0071bc;
+	border:2px white solid;
+	border-radius: 10px;
+	padding:10px 20px;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+textarea{
+	height:auto;
+}
+.contacts .required{
+	/*border:2px orange solid;*/
+}
+.contacts input:focus, textarea:focus{
+	color:black;
+	background:white;
+	border:2px white solid;
+}
+#btn-submit{
+	margin-bottom: 120px;
+}
+
 .footer{
     background:white;
     color:#999;
