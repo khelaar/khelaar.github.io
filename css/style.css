@@ -93,6 +93,9 @@ body{
 .content a{
 	color:orange;	
 }
+.content a:hover{
+	text-decoration:none;
+}
 .content img{
 	margin-bottom:20px;
 }
