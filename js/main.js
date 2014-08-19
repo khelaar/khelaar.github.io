@@ -20,3 +20,10 @@ $(document).ready(function () {
     }
   });
 });
+
+$(".how-it-works").click(function(){
+  $(this).addClass("how-it-works-img");
+  $(this).html("");
+  $(this).animate({height: "420px"},  300);
+
+});
