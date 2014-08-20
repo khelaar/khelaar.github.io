@@ -27,3 +27,8 @@ $(".how-it-works").click(function(){
   $(this).animate({height: "420px"},  300);
 
 });
+$("#btn-submit").click(function(){
+  $(this).attr("value", "Thanks, we'll be in touch.");
+  $(this).css("background-color", "green");
+  $(this).attr("disabled", true);
+});
