@@ -163,14 +163,14 @@
         <div class="content-section" >
 
             <div class="column col-left">
-                <img src="img/plane.png" id="plane">
+                <div class="plane"></div>
                 <p class="quote-big">
                     Fill out the form and send us a message, we’d get back to you in a moment.
                 </p>
             </div>        
 
             <div class="column col-main">
-                <form name="message-form" action="" methos="post">
+                <form id="message-form" action="javascript:alert( 'Sent!' );">
                     <label><strong>Your name</strong>
                         <input type="text" name="name" placeholder="Please fill out this field" class="required" required>
                     </label>
@@ -199,7 +199,9 @@
     </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="jquery.path.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
 

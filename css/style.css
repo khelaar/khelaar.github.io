@@ -226,10 +226,46 @@ body{
 .contacts{
 	background:url("../img/village.png") #0071bc no-repeat 50% 100%;
 }
-#plane{
+
+/*Plane animation*/
+.plane{
+	position:absolute;
+	height:150px;
+	width:150px;
 	margin-left:40px;
+	left:40px;
+	top:80px;
+	background:url("../img/plane.png") no-repeat 0 0;
+  	/*-webkit-transition-property: left, top, -webkit-transform;
+  	-webkit-transition-duration: 4s, 4s, 2s;
+  	transition-property: left, top, transform;
+  	transition-duration: 4s, 4s, 2s;*/
+
 }
+
+.plane-fly {
+  	-webkit-transition: 4s;
+    -moz-transition: 4s;
+    -o-transition: 4s;
+    transition: 4s;
+    -webkit-transform:rotate(360deg) translate(540px,-1620px);
+    -moz-transform:rotate(360deg) translate(540px,-1620px);
+    -o-transform:rotate(360deg) translate(540px,-1620px);
+    -ms-transform:rotate(360deg) translate(540px,-1620px);
+    transform:rotate(360deg) translate(540px,-1620px);
+    visibility: hidden;
+}
+
+/*.plane-fly {
+	left: -800px;
+	top: 200px;
+
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}*/
+
 .bluebg .quote-big{
+	margin-top:170px;
 	color:white;
 	font-width:300;
 }
