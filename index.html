@@ -170,7 +170,8 @@
             </div>        
 
             <div class="column col-main">
-                <form id="message-form" action="javascript:alert( 'Sent!' );">
+                <!-- Contact us form -->
+                <form id="message-form" action="" enctype="multipart/form-data" method="post" target="uploader_iframe">
                     <label><strong>Your name</strong>
                         <input type="text" name="name" placeholder="" class="required" required>
                     </label>
@@ -188,6 +189,8 @@
                     </label>
                     <input type="submit" id="btn-submit" value="Submit">
                 </form>
+                <!-- Invisible frame, preventing page reload on submit -->
+                <iframe id="uploader_iframe" name="uploader_iframe" style="display: none;"></iframe>
             </div>
         </div>
 
