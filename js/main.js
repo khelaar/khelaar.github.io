@@ -27,13 +27,27 @@ $(document).ready(function () {
 //show how it works slide
 $(".how-it-works").click(function(){
   $(this).addClass("how-it-works-img");
+  $(this).removeClass("how-it-works");
   $(this).html("");
   $(this).animate({height: "420px"},  300);
 
 });
 
 //disable submit button and play some animation
-$("#message-form").submit(function() {   
+$("#btn-submit").click(function(e) {  
+    var result=true;    
+    if ($("input[name=name]").val()=="") {
+      $("input[name=name]").attr("placeholder", "Please fill out this field");
+      result = false;
+    };
+    if ($("input[name=email]").val()=="") {
+      $("input[name=email]").attr("placeholder", "Please fill out this field");
+      result=false;
+    };
+    return result;
+});
+$("#message-form").submit(function(e) {   
+
   
     $("#btn-submit").attr("value", "Thanks, we'll be in touch.");
     $("#btn-submit").css("background-color", "green");
@@ -42,7 +56,6 @@ $("#message-form").submit(function() {
 
 
 //custom submit function shold be added
-    return false;
 });
 
 //preload images
