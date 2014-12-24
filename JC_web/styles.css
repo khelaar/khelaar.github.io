@@ -11,7 +11,7 @@ body{
 }
 .header {
   display:block;
-  width:100%
+  /*width:100%*/
   height:200px;
   background:#ccc;
   position:relative;
@@ -75,7 +75,7 @@ body{
 
 
 /*Tablets*/
-@media screen and (max-width:960px) {
+@media screen and (width:960px) {
   .header ul li{
     padding:0px 20px;
   }
@@ -100,7 +100,7 @@ body{
 
 }
 /*Smartphones*/
-@media screen and (max-width:600px) { /*yes this is not the right width*/
+@media screen and (width:600px) { /*yes this is not the right width*/
   .header {
     position:fixed;
     bottom:0;
