@@ -1,0 +1,123 @@
+body{
+  padding:0;
+  margin:0;
+  /*overflow:hidden;*/
+  overflow-x: hidden;
+}
+* {
+  /*border:1px solid black;*/
+  margin:0;
+  padding:0;
+}
+.header {
+  display:block;
+  width:100%
+  height:200px;
+  background:#ccc;
+  position:relative;
+
+}
+.header ul{
+  list-style-type:none;
+  position:relative;
+  left:50%;
+  text-align:center;
+}
+.header ul li{
+  display:inline-block;
+  position:relative;
+  right:50%;
+  padding:20px 40px;
+}
+
+.content{
+  max-width:960px;
+  margin:auto;
+
+}
+.tiles ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+.item{
+  box-sizing: border-box;
+  border:1px black solid;
+  background:green;
+  text-align:center;
+  width:192px;
+  height:192px;
+}
+.item.w2{
+  width:384px;
+  height:384px;
+  background:#ccc !important;
+}
+
+.item:nth-child(odd) {
+  background:yellow;
+}
+
+.clearfix{
+  clear:both;
+}
+#hidden{
+  /*display:none;*/
+  border:none;
+  width:1;
+  height:0;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+
+/*Tablets*/
+@media screen and (max-width:960px) {
+  .header ul li{
+    padding:0px 20px;
+  }
+  .tiles{
+    margin:0;
+    padding:0;
+  }
+  /*.tiles div{*/
+  .item{
+    background:blue;
+    width:25vw;
+    height:25vw;
+    margin:auto;
+  }
+  .item.w2{
+    width:50vw;
+    height:50vw;
+  }
+
+
+}
+/*Smartphones*/
+@media screen and (max-width:600px) { /*yes this is not the right width*/
+  .header {
+    position:fixed;
+    bottom:0;
+    left:0%;
+    width:100%;
+    z-index:1;
+  }
+  .header ul li{
+    display:inline-block;
+    position:relative;
+    right:50%;
+    padding:0px 10px;
+  }
+  .item{
+    width:50vw;
+    height:25vw;
+    background:red;
+  }
+  .item.w2{
+    width:100vw;
+    height:50vw;
+  }
+
+}
